@@ -1,0 +1,26 @@
+.block_component_quiz{
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.answers-editor {
+    display:  flex;
+    align-items: center;
+}
+
+.answers-editor > div:nth-child(1) {
+    flex: 1;
+}
+
+.icon_block {
+    color: rgb(185, 158, 0);
+}
+
+.delete_block {
+    color: rgb(253, 91, 91);
+    text-decoration: underline;
+}
+
+.delete_block:hover {
+    color: red;
+}

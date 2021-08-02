@@ -1,0 +1,97 @@
+.frontend-block-questions ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: unset;
+}
+
+.frontend-block-questions h5 {
+    font-size: 25px;
+    text-transform: capitalize;
+    margin: unset;
+}
+
+.frontend-block-questions li {
+    width: 200px;
+    border:  2px solid rgb(87, 86, 86);
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.frontend-block-questions li svg {
+    margin-right: 12px;
+}
+
+.frontend-block-questions {
+    position: relative;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 1rem;
+    background-color: yellow;
+    box-shadow: 5px 5px 20px rgba(66, 66, 66, 0.212);
+}
+
+.block_answer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.block_answer.correct {
+    background: linear-gradient(45deg, rgba(27,121,9,1) 0%, rgba(49,168,26,1) 100%);
+}
+
+.block_answer.incorrect {
+    background: linear-gradient(45deg, rgb(175, 24, 24) 0%, rgb(231, 34, 34) 100%);
+}
+
+.clicked_answer {
+    animation: blockanime 1200ms ease-in-out  2 alternate ;
+}
+
+@keyframes blockanime {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    50% {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.true-answer svg{
+    fill: rgb(23, 143, 23);
+}
+
+.false-answer svg{
+    fill: rgb(243, 66, 66);
+}
+
+.false-answer {
+    opacity: 0.4;
+}
